@@ -21,6 +21,21 @@
 		i++;
 	}
 	%>
+	
+	<%
+	int j=1;
+	while(true){
+		if(j<=9){
+		out.println(2 + " X " + j + " = " + (2*j));
+		out.println("<br>=============<br>");
+		j++;
+		
+		}else{
+			break;
+		}
+		
+	}
+	%>
 
 
 </body>
