@@ -33,8 +33,15 @@
 		}else{
 			break;
 		}
-		
 	}
 	%>
+	
+<%-- 	<%
+	int k=1;
+	while(true){
+		i++;
+		out.println(2 + " X " + j + " = " + (2*j));
+	}
+	%> --%>
 </body>
 </html>
