@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>JSP_01</name>
+	<name>Test</name>
 	<comment></comment>
 	<projects>
-		<project>Hello_lec</project>
-		<project>HTML</project>
-		<project>JSP_02</project>
-		<project>JSP_03</project>
-		<project>JSP_04</project>
-		<project>Servers</project>
-		<project>sss</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -10,9 +10,9 @@
 	<form action="cart_02.jsp">
 	수량 : <input type="text" name="number"> <br>
 	크기 : 
-	대<input type="radio" name="width" value="big">
-	중<input type="radio" name="width" value="medium">
-	소<input type="radio" name="width" value="small"> <br>
+	대<input type="radio" name="width" value="대" checked="checked">
+	중<input type="radio" name="width" value="중">
+	소<input type="radio" name="width" value="소"> <br>
 	색상 : 
 	<select name = "color">
 		<option value="베이지">베이지</option>
