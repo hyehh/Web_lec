@@ -14,7 +14,7 @@
 	BufferedReader reader = null;
 	// BufferedReader 이거 클라스임
 	try{
-		String filePath = application.getRealPath("input.txt");
+		String filePath = application.getRealPath("file.txt");
 		reader = new BufferedReader(new FileReader(filePath));
 		// BufferedReader는 읽어온 파일은 하나씩 차곡차곡 쌓아두는 역할
 		// FileReader는 하나씩 불러오는 역할
