@@ -37,9 +37,11 @@ public class DecAdd extends HttpServlet {
 		out.println("2+1 = " + decAdd(2,1) + "<br>");
 		out.println("3+1 = " + decAdd(3,1) + "<br>");
 		out.println("4+1 = " + decAdd(4,1) + "<br>");
+		out.print("ddd" + "<br>");
 		out.println("5+1 = " + decAdd(5,1) + "<br>");
 		out.println("</body>");
 		out.println("</html>");
+	
 	}
 	
 	private int decAdd(int num1, int num2) {

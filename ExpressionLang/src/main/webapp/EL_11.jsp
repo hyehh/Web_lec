@@ -17,8 +17,8 @@
 		
 		request.setAttribute("FRUITS", items);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("EL_12.jsp");
-		dispatcher.forward(request, response);
-		
+		dispatcher.forward(request, response); 
+		/* response.sendRedirect("EL_12.jsp"); 이거 쓰려면 ?있어야 함! 아니면 session이 있으면 됨! */
 	%>
 </body>
 </html>

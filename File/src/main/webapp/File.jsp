@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="Upload_03.jsp" method="post" enctype="multipart/form-data">
-		file : <input type="file" name="File">
-		<input type="submit" value="업로드">
-	</form>
+<% String uploadPath=request.getRealPath("Folder"); %>	
+
+<img alt="img upload" src="Folder">
 </body>
 </html>

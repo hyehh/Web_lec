@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="Upload_03.jsp" method="post" enctype="multipart/form-data">
-		file : <input type="file" name="File">
-		<input type="submit" value="업로드">
+	<h3>데이터 입력을 위한 테스트</h3>
+	<form action="InsertTest02.jsp" method="get">
+		사용자ID : <input type="text" name="userid" size="10">
+		<input type="submit" value="입력">
 	</form>
 </body>
 </html>
