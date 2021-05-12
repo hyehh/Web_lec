@@ -10,7 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.jsplec.bbs.command.BCommnad;
+import com.jsplec.bbs.command.BContentCommand;
+import com.jsplec.bbs.command.BDeleteCommand;
 import com.jsplec.bbs.command.BListCommand;
+import com.jsplec.bbs.command.BUpdateCommand;
+import com.jsplec.bbs.command.BWriteCommand;
 
 /**
  * Servlet implementation class BFrontController
@@ -81,7 +85,35 @@ public class BFrontController extends HttpServlet {
 			command.execute(request, response);
 			viewPage = "list.jsp";
 			break;
+		case("/write_view.do"):
+			// 입력할 화면 보여주는 것임
+			viewPage = "write_view.jsp";
+			break;
+		case("/write.do"):
+			command = new BWriteCommand();
+			command.execute(request, response);
+			viewPage = "list.do";
+			// list.jsp 적으면 비어있는 화면 나옴! list.do 적고 case로 다시 들어가서 화면 불러오기
+			break;
+		case("/content_view.do"):
+			command = new BContentCommand();
+			command.execute(request, response);
+			viewPage = "content_view.jsp";
+			break;
+		case("/delete.do"):
+			command = new BDeleteCommand();
+			command.execute(request, response);
+			viewPage = "list.do";
+			break;
+		case("/modify.do"):
+			command = new BUpdateCommand();
+			command.execute(request, response);
+			viewPage = "list.do";
+			break;
+		
 		}
+
+			
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
 		dispatcher.forward(request, response);
