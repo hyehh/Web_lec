@@ -84,7 +84,7 @@ function CheckForm(){
 		</tr>
 		<tr>
 			<td>&nbsp; </td>
-			<td><input type="button" value="확인" onclick="CheckForm()"></td>
+			<td><input type="submit" value="확인" onclick="CheckForm()"></td>
 		</tr>
 	</table> 
 	</form>
