@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<% String uploadPath=request.getRealPath("Folder"); %>	
-
-<img alt="img upload" src="Folder">
+	<img src= " ${pageContext.request.contextPath}/resource/image/${param.filename }">
 </body>
 </html>
